@@ -9,8 +9,7 @@ use Mail::Send;
 use Apache;
 use Apache::Constants;
 
-our $VERSION = "1.1";
-
+our $VERSION = "1.2";
 
 sub handler {
     my ($class,$r) = @_;
@@ -65,7 +64,7 @@ sub intruder {
         $class->send_mail($r, $hash);
     }
     $r->send_http_header("text/html");
-    print "<HTML><HEAD>Unauthorized access</HEAD>
+    print "<HTML><HEAD><title>Unauthorized access</title></HEAD>
 <BODY>
 You are not authorized to access this resource. This attempt has been
 recorded.
@@ -77,6 +76,7 @@ recorded.
 sub send_mail {
     my ($class, $r, $hash) = @_;
     my $email = $r->dir_config("OneTimeEmail") || $r->server_admin();
+    my $referrer = $r->header_in( 'Referer' );
     my $msg = new Mail::Send To => $email,
                              Subject => 'One-time URL reused';
     my $fh = $msg->open;
@@ -90,13 +90,12 @@ by @{[ $r->get_remote_host ]} ( @{[ $r->get_remote_logname ]} )
 
 EOF
 
+    if ($referrer) { print $fh "Accessed via $referrer\n\n" }
     $fh->close;
 }
 
 1;
 
-
-1;
 __END__
 # Below is stub documentation for your module. You better edit it!
 
@@ -149,6 +148,11 @@ behaviour you don't like, you can switch to the "method handler" style
 (ie. C<PerlHandler Apache::OneTime::URL-E<gt>handler> and subclass to
 override the bits you're unhappy about. This may be easier than convincing
 me to make changes to the module.
+
+=head1 THANKS
+
+Peter Sergeant offered several useful ideas which contributed to the 1.1
+and 1.2. releases of this module.
 
 =head1 AUTHOR
 

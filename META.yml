@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name: Apache-OneTimeURL
-version: 1.1
+version: 1.2
 license: perl
 distribution_type: module
 requires:
@@ -16,5 +16,5 @@ conflicts: {}
 provides:
   Apache::OneTimeURL:
     file: lib/Apache/OneTimeURL.pm
-    version: 1.1
+    version: 1.2
 generated_by: Module::Build version 0.19
