@@ -1,5 +1,8 @@
 Revision history for Perl extension Apache::OneTimeURL.
 
+1.1 Wed Jan 21 12:31:33 GMT 2004
+    - Doc/logic fix spotted by Peter Sergeant.
+
 0.01  Wed Oct  8 11:08:35 2003
 	- original version; created by h2xs 1.21 with options
 		-AX -n Apache::OneTimeURL

@@ -9,7 +9,7 @@ use Mail::Send;
 use Apache;
 use Apache::Constants;
 
-our $VERSION = "1.0";
+our $VERSION = "1.1";
 
 
 sub handler {
@@ -133,7 +133,7 @@ This URL will only be viewable once, and will then return an error. For
 the first five times that the URL is accessed in error, a mail will be sent
 to the email address given in the config. The number of times can be
 configured with the C<OneTimeMailCount> variable; if you don't want any
-mail, set this to zero.
+mail, set this to minus one.
 
 =head1 DESCRIPTION
 
