@@ -1,9 +1,16 @@
 Revision history for Perl extension Apache::OneTimeURL.
 
-1.1 Wed Jan 21 12:31:33 GMT 2004
+1.30 2013-08-12 NEILB
+    - Removed HouseURL from distribution
+    - Reformatted this file (Changes) according to CPAN::Changes::Spec
+
+1.2 2004-01-21 SIMON
+    - Unknown changes
+
+1.1 2004-01-21 SIMON
     - Doc/logic fix spotted by Peter Sergeant.
 
-0.01  Wed Oct  8 11:08:35 2003
+0.01 2003-10-08
 	- original version; created by h2xs 1.21 with options
 		-AX -n Apache::OneTimeURL
 
