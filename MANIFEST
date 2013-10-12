@@ -4,6 +4,4 @@ Build.PL
 README
 test.pl
 lib/Apache/OneTimeURL.pm
-META.yml
-Makefile.PL
 Build.PL
