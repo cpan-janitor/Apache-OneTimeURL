@@ -2,6 +2,5 @@ Changes
 MANIFEST
 Makefile.PL
 README
-test.pl
+t/01-basic.t
 lib/Apache/OneTimeURL.pm
-Build.PL
