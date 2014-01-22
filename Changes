@@ -1,6 +1,8 @@
 Revision history for Perl extension Apache::OneTimeURL.
 
 1.32 2014-01-22 NEILB
+    - Moved test into t/
+    - Switched to Makefile.PL
     - Added COPYRIGHT AND LICENSE header in doc
 
 1.31 2013-10-12 NEILB
