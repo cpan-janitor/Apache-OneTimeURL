@@ -9,7 +9,7 @@ use Mail::Send;
 use Apache;
 use Apache::Constants;
 
-our $VERSION = "1.32";
+our $VERSION = "1.33";
 
 sub handler {
     my ($class,$r) = @_;
@@ -153,6 +153,10 @@ me to make changes to the module.
 
 Peter Sergeant offered several useful ideas which contributed to the 1.1
 and 1.2. releases of this module.
+
+=head1 REPOSITORY
+
+L<https://github.com/neilb/Apache-OneTimeURL>
 
 =head1 AUTHOR
 

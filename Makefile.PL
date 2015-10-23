@@ -33,8 +33,8 @@ WriteMakefile(
                 bugtracker  => 'http://rt.cpan.org/Public/Dist/Display.html?Name=Apache-OneTimeURL',
                 repository  => {
                     type => 'git',
-                    web  => 'https://github.com/neilbowers/Apache-OneTimeURL',
-                    url  => 'git://github.com/neilbowers/Apache-OneTimeURL.git',
+                    web  => 'https://github.com/neilb/Apache-OneTimeURL',
+                    url  => 'git://github.com/neilb/Apache-OneTimeURL.git',
                 },
             },
           })
