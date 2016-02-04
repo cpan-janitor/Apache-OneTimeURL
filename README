@@ -1,16 +1,14 @@
-Apache/OneTimeURL version 0.01
+Apache/OneTimeURL version 1.33
 ==============================
 
-The README is used to introduce the module and provide instructions on
-how to install the module, any machine dependencies it may have (for
-example C compilers and installed libraries) and any other information
-that should be provided before the module is installed.
+This module is designed to provide a one-time URL for retrieval of a
+resource via HTTP. The module requires an Apache webserver with mod_perl
+enabled and with appropriate configuration directives.
 
-A README file is required for CPAN modules since CPAN extracts the
-README file from a module distribution so that people browsing the
-archive can use it get an idea of the modules uses. It is usually a
-good idea to provide version information here so that people can
-decide whether fixes for the module are worth downloading.
+When a URL is generated it will only be viewable once, and will then
+return an error. For the first five times that the URL is accessed in
+error, a mail will be sent to the email address given in the config. The
+number of times can be configured with the OneTimeMailCount variable.
 
 INSTALLATION
 
@@ -25,11 +23,15 @@ DEPENDENCIES
 
 This module requires these other modules and libraries:
 
-  blah blah blah
+  Apache
+  DB_File
+  Digest::MD5
+  Mail::Send
+  MLDBM
 
 COPYRIGHT AND LICENCE
 
-Put the correct copyright and licence information here.
+Copyright (C) 2003 Simon Cozens.
 
-Copyright (C) 2003 A. U. Thor blah blah blah
-
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
