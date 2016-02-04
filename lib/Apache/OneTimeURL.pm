@@ -9,7 +9,7 @@ use Mail::Send;
 use Apache;
 use Apache::Constants;
 
-our $VERSION = "1.33";
+our $VERSION = "1.34";
 
 sub handler {
     my ($class,$r) = @_;

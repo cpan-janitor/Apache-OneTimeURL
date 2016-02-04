@@ -1,5 +1,10 @@
 Revision history for Perl module Apache::OneTimeURL
 
+1.34 2016-02-04 NEILB
+    - Fixed rendering problem with SYNOPSIS. Thanks to Pete Houston.
+    - README updated to have relevant content instead of boilerplate.
+      Also thanks to Pete Houston.
+
 1.33 2015-10-23 NEILB
     - Updated repo URL with my new github username
 
