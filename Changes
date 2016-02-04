@@ -27,6 +27,6 @@ Revision history for Perl module Apache::OneTimeURL
     - Doc/logic fix spotted by Peter Sergeant.
 
 0.01 2003-10-08
-	- original version; created by h2xs 1.21 with options
-		-AX -n Apache::OneTimeURL
+    - original version; created by h2xs 1.21
+      with options -AX -n Apache::OneTimeURL
 
