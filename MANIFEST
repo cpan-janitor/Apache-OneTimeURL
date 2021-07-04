@@ -1,6 +1,0 @@
-Changes
-MANIFEST
-Makefile.PL
-README
-t/01-basic.t
-lib/Apache/OneTimeURL.pm

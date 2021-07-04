@@ -9,8 +9,6 @@ use Mail::Send;
 use Apache;
 use Apache::Constants;
 
-our $VERSION = "1.34";
-
 sub handler {
     my ($class,$r) = @_;
     # This allows us to use inheritance in situations where we're called
@@ -157,7 +155,7 @@ and 1.2. releases of this module.
 
 =head1 REPOSITORY
 
-L<https://github.com/neilb/Apache-OneTimeURL>
+L<https://github.com/cpan-janitor/Apache-OneTimeURL>
 
 =head1 AUTHOR
 
